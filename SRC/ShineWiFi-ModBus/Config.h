@@ -13,7 +13,7 @@
 // New protocols can be easily defined by adding new Growatt<version>.cpp/h
 // files and then specifying the protocol there. See existing procol files
 // for reference.
-#define GROWATT_MODBUS_VERSION 124
+#define GROWATT_MODBUS_VERSION 3000
 
 // On some SPH inverters (Protocol 124) the battery temperature multiplier 
 // differs from the documented value (of 0.1). Set this to 1.0 on these inverters.
@@ -28,7 +28,7 @@
 #define OTA_PASSWORD "enter_ota_secret_here"
 
 // Enable direct modbus read/write support via the WebGUI. Enabling this is a potential security issue.
-#define ENABLE_MODBUS_COMMUNICATION 0
+#define ENABLE_MODBUS_COMMUNICATION 1
 
 // Define a NTP Server and TZ Info to automatically adjust the inverter date/time.
 // TZ Info can be found at: https://github.com/nayarsystems/posix_tz_db/blob/master/zones.csv
@@ -88,7 +88,7 @@
 //    RETRY_TIMER: Determines the time between reconnection [ms]
 //    LED_TIMER: Led blinking rate [ms]
 //    BUTTON_TIMER: enter config mode after 5*BUTTON_TIMER [ms]
-#define REFRESH_TIMER 5000 // 5s default
+#define REFRESH_TIMER 1000 // 1s
 #define WIFI_RETRY_TIMER 120000 // 120s default
 #define LED_TIMER 500 //  0.5s default
 #define BUTTON_TIMER 500 //  0.5s default
