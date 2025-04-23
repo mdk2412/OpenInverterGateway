@@ -73,7 +73,6 @@ const char MAIN_page[] PROGMEM = R"=====(
         <a onClick="return confirm('Reboot?');" href="./reboot" class="linkButton yellow">Reboot</a>
         <a href="./postCommunicationModbus" class="linkButton red">RW Modbus</a>
     </div>
-    <div id="DataContainer"></div>
 </body>
 </html>
 )=====";
