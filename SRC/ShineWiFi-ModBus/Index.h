@@ -83,7 +83,7 @@ const char SendPostSite_page[] PROGMEM = R"=====(
 <head>
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Growatt Inverter</title>
+  <title>Growatt MIN TL-XH</title>
 </head>
 <body>
   <h2>Growatt MIN TL-XH POST Communication Modbus</h2>
