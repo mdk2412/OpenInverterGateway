@@ -100,7 +100,7 @@ boolean ShineMqtt::mqttPublish(const String& jsonString) {
   if (this->mqttclient.connected()) {
     bool res = this->mqttclient.publish(this->mqttconfig.topic.c_str(),
                                         jsonString.c_str(), true);
-    Log.println(res ? "succeed" : "failed");
+    Log.println(res ? "succeeded" : "failed");
 
     return res;
   } else {
@@ -125,7 +125,7 @@ boolean ShineMqtt::mqttPublish(JsonDocument& doc, String topic) {
     bufferedClient.flush();
     this->mqttclient.endPublish();
 
-    Log.println(res ? "succeed" : "failed");
+    Log.println(res ? "succeeded" : "failed");
 
     return res;
   } else {
