@@ -86,7 +86,7 @@ const char SendPostSite_page[] PROGMEM = R"=====(
   <title>Growatt MIN TL-XH</title>
 </head>
 <body>
-  <h2>Growatt MIN TL-XH POST Communication Modbus</h2>
+  <h2>POST Communication Modbus</h2>
   <form action="/postCommunicationModbus_p" method="POST">
     <input type="text" name="reg" placeholder="Register ID">
     <input type="text" name="val" placeholder="Input Value (16bit only!)">
