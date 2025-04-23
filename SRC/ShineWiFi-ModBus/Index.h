@@ -89,7 +89,7 @@ const char SendPostSite_page[] PROGMEM = R"=====(
   <h2>POST Communication Modbus</h2>
   <form action="/postCommunicationModbus_p" method="POST">
     <input type="text" name="reg" placeholder="Register ID">
-    <input type="text" name="val" placeholder="Input Value (16bit only!)">
+    <input type="text" name="val" placeholder="Input Value (16-bit only!)">
     <select name="type">
       <option value="16b" selected>16b</option>
       <option value="32b">32b</option>
