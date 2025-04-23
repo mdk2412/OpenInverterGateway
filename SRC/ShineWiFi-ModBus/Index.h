@@ -88,20 +88,20 @@ const char SendPostSite_page[] PROGMEM = R"=====(
 <body>
   <h2>Growatt Post Communication Modbus</h2>
   <form action="/postCommunicationModbus_p" method="POST">
-    <input type="text" name="reg" placeholder="Register ID"></br>
-    <input type="text" name="val" placeholder="Input Value (16bit only!)"></br>
+    <input type="text" name="reg" placeholder="Register ID">
+    <input type="text" name="val" placeholder="Input Value (16bit only!)">
     <select name="type">
       <option value="16b" selected>16b</option>
       <option value="32b">32b</option>
-    </select></br>
+    </select>
     <select name="operation">
       <option value="R" selected>Read</option>
       <option value="W">Write</option>
-    </select></br>
+    </select>
     <select name="registerType">
       <option value="I" selected>Input Register</option>
       <option value="H">Holding Register</option>
-    </select></br>
+    </select>
     <input type="submit" value="go">
   </form>
   <a href=".">back</a>
