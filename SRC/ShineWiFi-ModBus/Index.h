@@ -80,7 +80,7 @@ copies or substantial portions of the Software. -->
 </head>
 
 <body>
-    <h2>Growatt Inverter</h2>
+    <h2>Growatt MIN TL-XH</h2>
 
     <div class="linkButtonBar">
         <a href="./status" class="linkButton">Json</a>
