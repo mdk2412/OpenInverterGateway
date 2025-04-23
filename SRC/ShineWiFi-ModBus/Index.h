@@ -5,7 +5,7 @@ const char MAIN_page[] PROGMEM = R"=====(
 <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Growatt Inverter</title>    
+    <title>Growatt MIN TL-XH</title>    
     <style>
         body {
             min-width: 310px;
@@ -86,7 +86,7 @@ const char SendPostSite_page[] PROGMEM = R"=====(
   <title>Growatt Inverter</title>
 </head>
 <body>
-  <h2>Growatt Post Communication Modbus</h2>
+  <h2>Growatt MIN TL-XH POST Communication Modbus</h2>
   <form action="/postCommunicationModbus_p" method="POST">
     <input type="text" name="reg" placeholder="Register ID">
     <input type="text" name="val" placeholder="Input Value (16bit only!)">
