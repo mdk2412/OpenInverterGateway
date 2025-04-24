@@ -101,7 +101,7 @@ const char SendPostSite_page[] PROGMEM = R"=====(
       <option value="I">Input Register</option>
       <option value="H" selected>Holding Register</option>
     </select><br>
-    <input type="submit" value="Execute">
+    <input type="submit" value="Submit">
   </form><br>
   <a href=".">back</a>
 </body>
