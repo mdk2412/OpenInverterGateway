@@ -81,8 +81,8 @@ bool ShineMqtt::mqttReconnect() {
     } else {
       Log.print(F("failed, rc="));
       Log.print(this->mqttclient.state());
-      Log.println(F(" try again in 5 seconds"));
-      Log.println(F("MQTT Connect failed"));
+      Log.println(F("try again in 5 seconds"));
+      Log.println(F("MQTT connect failed"));
       previousConnectTryMillis = millis();
     }
   }
@@ -91,7 +91,7 @@ bool ShineMqtt::mqttReconnect() {
 
 boolean ShineMqtt::mqttPublish(const String& jsonString) {
   if (jsonString.length() >= BUFFER_SIZE) {
-    Log.println(F("MQTT message to long for buffer"));
+    Log.println(F("MQTT message too long for buffer"));
 
     return false;
   }
