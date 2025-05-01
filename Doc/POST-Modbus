@@ -1,0 +1,9 @@
+Modbus registers can be read/written using POST to ip address IP:
+
+curl -d "reg=0&operation=W&registerType=H&type=16b" http://IP/postCommunicationModbus_p
+
+(read register 0)
+
+curl -d "reg=0&val=1&operation=W&registerType=H&type=16b" http://IP/postCommunicationModbus_p
+
+(write 1 to register 0)
