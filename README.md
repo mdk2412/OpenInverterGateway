@@ -1,17 +1,11 @@
 # OpenInverterGateway
-
 Firmware replacement for Growatt ShineWiFi-S (serial), ShineWiFi-X (USB) or custom build sticks (ESP8266/ESP32).
 
 # How to install
-
-* Download a precompiled release from [here](https://github.com/OpenInverterGateway/OpenInverterGateway/releases) (hardcoded to default [settings](https://github.com/OpenInverterGateway/OpenInverterGateway/blob/master/SRC/ShineWiFi-ModBus/Config.h.example)/growatt protocol 1.24)
-
-Or
-
 * Checkout this repo
 * Setup platform.io
 * Open the project folder and choose the correct env for your hardware
-* Rename and adapt [Config.h.example](https://github.com/OpenInverterGateway/OpenInverterGateway/blob/master/SRC/ShineWiFi-ModBus/Config.h.example) to Config.h with your compile time settings
+* Adapt Config.h with your compile time settings
 
 After you obtained an image you want to flash:
 
@@ -25,7 +19,6 @@ Implemented Features:
 * The inverter is queried using Modbus Protocol
 * The data received will be transmitted by MQTT to a server of your choice.
 * The data received is also provided as JSON and Prometheus format
-* Show a simple live graph visualization  (`http://<ip>`) with help from highcharts.com
 * Firmware update via wifiManager
 * It supports basic access to arbitrary modbus data
 * It tries to autodetect which stick type to use
@@ -60,8 +53,7 @@ See the short descriptions to the devices (including some pictures) in the "Doc"
 * Growatt MOD 12KTL3-X (Protocol 124 via USB)
 * Growatt MID 25-40KTL3-X (Protocol 120 via USB)
 * Growatt SPH 4000-10000STL3-X BH (Protocol 124 via Serial)
-* Growatt MID 15KTL3-XH (Protocol 3000 via USB)
-* And others ....
+* Growatt MIN TL-XH (Protocol 3000 via USB)
 
 ## Modbus Protocol Versions
 The documentation from Growatt on the Modbus interface is available, search for "Growatt PV Inverter Modbus RS485 RTU Protocol" on Google.
@@ -78,21 +70,17 @@ For IoT applications the raw data can now read in JSON format (application/json)
 If you want to scrape the metrics with a Prometheus server, you can use the endpoint `http://<ip>/metrics`. A possible configuration is described [here](Doc/Prometheus.md).
 
 ## Homeassistant configuration
-
 Homeassistant config is described [here](Doc/MQTT.md)
 
 ## Debugging
-
 If you turned on `ENABLE_WEB_DEBUG` in the Config.h (see Config.h.example) there is a debug site under `http://<ip>/debug`. You can turn on `ENABLE_TELNET_DEBUG` to get the debug messages via a telnet client. `telnet <ip>`
 
 To enable even more messages, take a look to `DEBUG_MODBUS_OUTPUT`.
 
 ## Change log
-
 See [here](CHANGELOG.md)
 
 ## Acknowledgements
-
 This arduino sketch will replace the original firmware of the Growatt ShineWiFi stick.
 
 This project is based on Jethro Kairys work on the Modbus interface
