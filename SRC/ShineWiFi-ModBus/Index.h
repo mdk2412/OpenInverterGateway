@@ -65,8 +65,8 @@ const char MAIN_page[] PROGMEM = R"=====(
 <body>
     <h2>Growatt MIN TL-XH</h2>
     <div class="linkButtonBar">
-        <a href="./status" class="linkButton">Json</a>
-        <a href="./uiStatus" class="linkButton">UI Json</a>
+        <a href="./status" class="linkButton">JSON</a>
+        <a href="./uiStatus" class="linkButton">UI JSON</a>
         <a href="./metrics" class="linkButton">Metrics</a>
         <a href="./debug" class="linkButton">Log</a>
         <a onClick="return confirm('Start Config AP?');" href="./startAp" class="linkButton yellow">Start Config AP</a>
